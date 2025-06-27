@@ -15,12 +15,14 @@
   <meta property="og:site_name" content="Napoluostrove" />
   <meta property="og:locale" content="ru_RU" />
 
+  <!-- Font Awesome 6 Free CDN -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   <!-- Preload shriftlar -->
-  <link rel="preload" href="fonts/Roboto/stylesheet.css" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/Roboto/stylesheet.css" crossorigin>
 
   <!-- Preload muhim rasm -->
-  <link rel="preload" as="image" href="https://picsum.photos/200/300">
-  <link rel="preload" as="image" href="https://picsum.photos/200/300">
+  <!-- <link rel="preload" as="image" href="https://picsum.photos/200/300">
+  <link rel="preload" as="image" href="https://picsum.photos/200/300"> -->
 
   <!-- Preload CSS -->
   <link rel="preload" href="css/bootstrap-custom.css" as="style">
@@ -48,7 +50,7 @@
           </a>
           <ul class="d-flex gap-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">Окна ▾</a>
+              <a class="nav-link active" href="#">Окна ▾</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Двери ▾</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Балконы ▾</a></li>
@@ -56,9 +58,17 @@
             <li class="nav-item"><a class="nav-link" href="#">Входные группы ▾</a></li>
             <li class="nav-item"><a class="nav-link" href="#">О компании ▾</a></li>
           </ul>
-          <div>
-            <a class="tel" href="tel:88002555238">8 (800) 255-52-38</a>
-            <span class="work-time">Пн-Пт: 9:00 - 17:00</span>
+          <div class="d-flex align-items-center gap-3">
+            <a class="tg" href="#!">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a class="whatsapp" href="#!">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <div>
+              <a class="tel" href="tel:88002555238">8 (800) 255-52-38</a>
+              <span class="work-time">Пн-Пт: 9:00 - 17:00</span>
+            </div>
           </div>
         </nav>
       </div>
@@ -88,10 +98,274 @@
         </div>
       </search>
 
+      <div class="container">
+        <ul class="breadcrumb-box">
+          <div class="d-flex align-items-center gap-1">
+            <i class="fa-solid fa-folder"></i>
+            <b>Ключевые слова:</b>
+          </div>
+          <li>
+            <a href="#!">Алюминиевые окна / </a>
+          </li>
+          <li>
+            <a href="#!">Уход</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="blog">
+        <div class="container">
+          <img class="blog-banner" src="./img/01/blog-img.jpg" alt="blog-img">
+          <h2 class="blog-title">Lorem, ipsum dolor.</h2>
+          <p class="blog-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, praesentium adipisci ad deserunt
+            perspiciatis nesciunt laboriosam expedita nisi, consequuntur debitis et nulla voluptates ducimus quidem.
+            Repellat et vel veritatis corporis.
+          </p>
+          <blockquote>
+            <div class="d-flex gap-2 align-items-center">
+              <i class="info-icon fa-solid fa-circle-info"></i>
+              <p class="blog-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi harum temporibus cum,
+                laboriosam est ducimus voluptatem deserunt adipisci rem laudantium ipsam et non alias aliquid tempore
+                quae
+                illum eveniet!
+              </p>
+            </div>
+            <a class="show-more" href="#!">подробнее...</a>
+          </blockquote>
+          <h2 class="blog-title">Lorem, ipsum dolor.</h2>
+          <p class="blog-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, praesentium adipisci ad deserunt
+            perspiciatis nesciunt laboriosam expedita nisi, consequuntur debitis et nulla voluptates ducimus quidem.
+            Repellat et vel veritatis corporis.
+          </p>
+          <ul class="blog-list">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dolore iure quae quis nemo iusto modi. Ipsum
+            eum ducimus officia, porro minima nulla hic. Est amet neque aliquam magnam labore?
+          </p>
+        </div>
+      </section>
+
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h4 class="footer-title">Пластиковые окна</h4>
+          <ul>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Пластиковые окна</h4>
+          <ul>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Пластиковые окна</h4>
+          <ul>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Пластиковые окна</h4>
+          <ul>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+
+              <ul>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#!">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">
+                <i class="fa-solid fa-chevron-right"></i>
+                Lorem, ipsum dolor.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>официальный сайт компании "На полуострове*. Сайт не является публичной офертой и носит информационный характер. <a href="#!">Пользовательское соглашение</a>. Все права защищены 2025.</p>
+      </div>
+    </footer>
   </div>
 
   <!-- JS fayllar -->
