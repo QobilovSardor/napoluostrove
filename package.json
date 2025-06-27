@@ -1,0 +1,16 @@
+{
+  "name": "napoluostrove",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch css/bootstrap-custom.scss:css/bootstrap-custom.css css/style.scss:css/style.css --no-source-map --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}

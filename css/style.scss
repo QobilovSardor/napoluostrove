@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+a,
+span {
+  display: inline-block;
+}
+button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #1c3f97;
+}
+.ltx-before,
+.ltx-after {
+  border-top: 9px solid #fff;
+  border-color: #fff;
+  width: 100px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 18px;
+    border-left: 9px solid #fff;
+    border-color: #fff;
+    position: absolute;
+    left: 0;
+  }
+  &::after {
+    content: '';
+    height: 18px;
+    border-left: 9px solid #fff;
+    border-color: #fff;
+    position: absolute;
+    right: 0;
+  }
+}
+.ltx-after {
+  bottom: 0;
+  &::before,
+  &::after {
+    top: -27px;
+  }
+}
+// header
+.header {
+  padding: 20px 0;
+  &-container {
+    max-width: 1570px;
+    margin: 0 auto;
+  }
+  .nav-link {
+    webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #030354;
+    position: relative;
+    z-index: 5;
+    font-weight: 700;
+
+    &:hover,
+    &.active {
+      color: #2db1e6;
+    }
+  }
+  .tel {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1c3f97;
+    text-decoration: none;
+  }
+  .work-time {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2db1e6;
+    text-align: right;
+  }
+}
+// header
+
+// banner
+.banner {
+  background: url(../img/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 45px 0;
+  &-content {
+    margin: 50px 0;
+  }
+  &-title {
+    color: #fff;
+    position: relative;
+    z-index: 11;
+    line-height: 1.15em;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .breadcrumb {
+    margin-top: 14px;
+    a {
+      text-decoration: none;
+      color: #62b6f3;
+      &.active {
+        color: #fff;
+      }
+    }
+  }
+}
+// banner
