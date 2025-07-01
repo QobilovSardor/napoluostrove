@@ -27,6 +27,15 @@ const glazingStepsSwiper = new Swiper(".glazing-steps-swiper", {
   },
 });
 
+// blog-swiper
+const blogSwiper = new Swiper(".blog-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".blog-swiper .swiper-btn-next",
+    prevEl: ".blog-swiper .swiper-btn-prev",
+  },
+});
 
 // try {
 //   window.addEventListener('DOMContentLoaded', function () {

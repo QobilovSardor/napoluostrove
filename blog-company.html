@@ -56,7 +56,7 @@
 <body>
 
   <div class="overflow-hidden contact-page">
-    <!-- Semantik Header -->
+    <!-- Header -->
     <header class="header">
       <div class="header-container">
         <nav class="d-flex align-items-center justify-content-between">
@@ -89,20 +89,20 @@
       </div>
     </header>
 
-    <!-- Asosiy Kontent -->
+    <!-- Kontent -->
     <main>
 
       <search class="banner">
         <div class="banner-container">
           <div class="ltx-before"></div>
           <div class="banner-content">
-            <h1 class="banner-title">Часто задаваемые вопросы</h1>
+            <h1 class="banner-title">Блог компании</h1>
             <ul class="breadcrumb d-flex justify-content-center align-items-center gap-1">
               <li>
                 <a href="index.html">Главная / </a>
               </li>
               <li>
-                <a class="active" aria-current="page">Часто задаваемые вопросы</a>
+                <a class="active" aria-current="page">Блог компании</a>
               </li>
             </ul>
           </div>
@@ -110,65 +110,137 @@
         </div>
       </search>
 
-      <!-- question -->
-      <search class="question my-5">
+      <!-- blog -->
+      <search class="blog mt-5">
         <div class="main-container">
-          <h2 class="title mb-4">Часто задаваемые вопросы</h2>
+          <div class="swiper blog-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <picture>
+                    <img class="w-100 h-100 object-fit-cover mb-3 rounded-3" src="img/01/blog-img.jpg" alt="blog img"
+                      width="480" height="227">
+                  </picture>
+                  <h3 class="blog-card__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <p class="blog-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis autem beatae culpa
+                    possimus commodi cupiditate temporibus, ex mollitia non soluta velit accusamus molestias similique
+                    dicta eum porro, exercitationem recusandae.
+                  </p>
+                  <a class="btn-main" href="#!">
+                    Подробнее
+                    <svg width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <picture>
+                    <img class="w-100 h-100 object-fit-cover mb-3 rounded-3" src="img/01/blog-img.jpg" alt="blog img"
+                      width="480" height="227">
+                  </picture>
+                  <h3 class="blog-card__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <p class="blog-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis autem beatae culpa
+                    possimus commodi cupiditate temporibus, ex mollitia non soluta velit accusamus molestias similique
+                    dicta eum porro, exercitationem recusandae.
+                  </p>
+                  <a class="btn-main" href="#!">
+                    Подробнее
+                    <svg width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <picture>
+                    <img class="w-100 h-100 object-fit-cover mb-3 rounded-3" src="img/01/blog-img.jpg" alt="blog img"
+                      width="480" height="227">
+                  </picture>
+                  <h3 class="blog-card__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <p class="blog-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis autem beatae culpa
+                    possimus commodi cupiditate temporibus, ex mollitia non soluta velit accusamus molestias similique
+                    dicta eum porro, exercitationem recusandae.
+                  </p>
+                  <a class="btn-main" href="#!">
+                    Подробнее
+                    <svg width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-btn-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="swiper-btn-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="blog-categories">
+            <div class="categories-box">
+              <h3 class="categories-box__title">
+                <div class="title-before"></div>
+                Категорие
+                <div class="title-after"></div>
 
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
+              </h3>
+              <ul class="categories-box__list d-flex flex-column gap-2 mt-3">
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+              </ul>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
+            <div class="categories-box">
+              <h3 class="categories-box__title">
+                <div class="title-before"></div>
+                Категорие
+                <div class="title-after"></div>
+
+              </h3>
+              <ul class="d-flex gap-2 mt-3 flex-wrap">
+                <li>
+                  Lorem <span>(6)</span>
+                </li>
+                <li>
+                  Lorem <span>(6)</span>
+                </li>
+                <li>
+                  Lorem <span>(6)</span>
+                </li>
+                <li>
+                  Lorem <span>(6)</span>
+                </li>
+                <li>
+                  Lorem <span>(6)</span>
+                </li>
+              </ul>
             </div>
           </div>
-
         </div>
       </search>
 
