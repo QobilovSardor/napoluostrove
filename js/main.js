@@ -26,3 +26,11 @@ const glazingStepsSwiper = new Swiper(".glazing-steps-swiper", {
     prevEl: ".glazing-steps-swiper .swiper-btn-prev",
   },
 });
+
+
+// try {
+//   window.addEventListener('DOMContentLoaded', function () {
+//     VK.init({ apiId: 111, onlyWidgets: true });
+//     VK.Widgets.Comments('vk_comments', { width: 500, limit: 15 }, 321);
+//   });
+// } catch (error) { }

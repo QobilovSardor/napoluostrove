@@ -3,7 +3,6 @@
 @import '../node_modules/bootstrap/scss/maps';
 @import '../node_modules/bootstrap/scss/mixins';
 
-
 @import '../node_modules/bootstrap/scss/utilities'; // ❗️ BU yerda $utilities aniqlanadi
 @import '../node_modules/bootstrap/scss/utilities/api'; // ❗️ BU yerda $utilities ishlatiladi
 
@@ -15,3 +14,5 @@
 @import '../node_modules/bootstrap/scss/containers';
 @import '../node_modules/bootstrap/scss/navbar';
 @import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/accordion';
+@import '../node_modules/bootstrap/scss/transitions';

@@ -24,6 +24,7 @@ ol {
 a,
 span {
   display: inline-block;
+  text-decoration: none;
 }
 button {
   padding: 0;
@@ -37,6 +38,44 @@ body {
   font-weight: normal;
   color: #1c3f97;
 }
+
+// accordion
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button {
+  box-shadow: none !important ;
+  background: #ebf2f5 !important;
+  border-radius: 10px !important;
+}
+.accordion-button::after {
+  width: 20px;
+  height: 3px;
+  transform: none !important;
+  background: #2db1e6;
+}
+.accordion-button::before {
+  content: '';
+  position: absolute;
+  top: 51%;
+  right: 28px;
+  height: 20px;
+  width: 3px;
+  transform: translateY(-50%);
+  background: #2db1e6;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.accordion-button.collapsed::before {
+  opacity: 1;
+}
+// accordion
+
 .container {
   max-width: 1147px;
   margin: 0 auto;
@@ -53,7 +92,7 @@ body {
   font-size: 14px;
   text-align: center;
 }
-.big-container {
+.main-container {
   max-width: 1570px;
   margin: 0 auto;
 }
@@ -192,12 +231,12 @@ body {
 
 // banner
 .banner {
-  background: url(../img/banner-bg.jpg) no-repeat;
+  background: url(../img/banner-bg.webp) no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   color: #fff;
-  padding: 45px 0;
+  padding: 20px 0;
   &-content {
     margin: 50px 0;
   }
@@ -452,10 +491,10 @@ body {
       height: 100%;
       object-fit: cover;
       z-index: -1;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
     }
     &:hover {
-      .portfolio-box__img  {
+      .portfolio-box__img {
         transform: scale(1.1);
       }
     }
@@ -554,6 +593,67 @@ body {
   //     }
   //   }
   // }
+}
+
+// contact
+.contact {
+  padding: 50px 0;
+  &-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  &-desc {
+    margin: 20px 0;
+  }
+  &-links {
+    a {
+      color: #1c3f97;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  &-icon {
+    color: #2db1e6;
+    min-width: 20px;
+  }
+
+  .contact-map {
+    width: 100%;
+    height: 400px;
+  }
+  .work-times {
+    margin-top: 20px;
+    width: 70%;
+    .week-day {
+      color: #2db1e6;
+      white-space: nowrap;
+      min-width: 90px;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      transform: translateY(-6px);
+      display: block;
+      background: gray;
+    }
+    .work-time {
+      padding-left: 10px;
+      white-space: nowrap;
+      color: #1c3f97;
+    }
+  }
+}
+.reviews-company {
+  .yandex-reviews {
+    width: 100%;
+    height: 700px;
+    border-radius: 8px;
+  }
+}
+.contact-page {
+  .glazing-steps__box-desc {
+    font-size: 14px;
+  }
 }
 
 // footer
