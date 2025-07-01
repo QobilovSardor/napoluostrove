@@ -452,6 +452,12 @@ body {
       height: 100%;
       object-fit: cover;
       z-index: -1;
+      transition: all .2s linear;
+    }
+    &:hover {
+      .portfolio-box__img  {
+        transform: scale(1.1);
+      }
     }
     &__title {
       color: #fff;
