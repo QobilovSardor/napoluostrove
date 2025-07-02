@@ -52,6 +52,13 @@ body {
   box-shadow: none !important ;
   background: #ebf2f5 !important;
   border-radius: 10px !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c3f97 !important;
+  .accordion-icon {
+    color: #2db1e6;
+    margin-right: 10px;
+  }
 }
 .accordion-button::after {
   width: 20px;
@@ -170,6 +177,31 @@ body {
   &::before,
   &::after {
     top: -27px;
+  }
+}
+.info-blockquote {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #35b1e9;
+  margin-top: 30px;
+  .blog-desc {
+    margin-bottom: 0;
+    font-weight: 600;
+    i {
+      transform: translateY(5px);
+    }
+  }
+  .show-more {
+    color: #2db1e6;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+  }
+  .info-icon {
+    font-size: 30px;
+    color: #2db1e6;
   }
 }
 // header
@@ -742,7 +774,8 @@ body {
   background-color: #1c3f97;
   margin-top: 30px;
   padding-top: 20px;
-  .container {
+  .container,
+  .main-container {
     display: flex;
     align-items: start;
     justify-content: space-between;
