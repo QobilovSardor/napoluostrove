@@ -47,6 +47,26 @@ const accessoriesSwiper = new Swiper(".accessories-swiper", {
   },
 });
 
+// tab-swiper-1
+const tabSwiper1 = new Swiper(".tab-swiper-1", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".tab-swiper-1 .swiper-btn-next",
+    prevEl: ".tab-swiper-1 .swiper-btn-prev",
+  },
+});
+
+// colors-swiper
+const colorsSwiper = new Swiper(".colors-swiper", {
+  slidesPerView: 9,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".colors-swiper .swiper-btn-next",
+    prevEl: ".colors-swiper .swiper-btn-prev",
+  },
+});
+
 const ctx = document.getElementById('myChart').getContext('2d');
 if (ctx) {
   const myChart = new Chart(ctx, {
@@ -96,6 +116,8 @@ if (ctx) {
   });
   legendContainer.innerHTML = legendItems.join('');
 }
+
+
 
 // try {
 //   window.addEventListener('DOMContentLoaded', function () {
