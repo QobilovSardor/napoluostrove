@@ -11,6 +11,32 @@ closeMenuBtn.addEventListener('click', () => {
   overlay.classList.remove("show");
 })
 
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', function (e) {
+    e.preventDefault(); // Havolani bosganda sahifa yangilanmasligi uchun
+    const subMenu = this.querySelector('.sub-menu');
+
+    // Faqat bosilgan nav-itemning sub-menusini ochish/yopish
+    if (subMenu) {
+      const isActive = this.classList.contains('active');
+
+      // Barcha nav-item'larni yopish (faqat bitta ochiq bo'lishi uchun)
+      document.querySelectorAll('.nav-item').forEach(nav => {
+        nav.classList.remove('active');
+        const otherSubMenu = nav.querySelector('.sub-menu');
+        if (otherSubMenu) {
+          otherSubMenu.classList.remove('active');
+        }
+      });
+
+      // Agar sub-menu allaqachon ochiq bo'lsa, yopamiz, aks holda ochamiz
+      if (!isActive) {
+        this.classList.add('active');
+        subMenu.classList.add('active');
+      }
+    }
+  });
+});
 
 const swiper = new Swiper(".constructions-swiper", {
   slidesPerView: 6,
@@ -52,7 +78,7 @@ const glazingStepsSwiper = new Swiper(".glazing-steps-swiper", {
     600: {
       slidesPerView: 2,
     },
-      0: {
+    0: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
