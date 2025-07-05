@@ -54,26 +54,110 @@
 </head>
 
 <body>
-
+  <div class="overlay" id="overlay"></div>
   <div class="overflow-hidden contact-page">
     <!-- Header -->
     <header class="header">
       <div class="header-container">
         <nav class="d-flex align-items-center justify-content-between">
           <a class="logo" href="index.html">
-            <img src="img/logo.webp" alt="Пластиковые окна" srcset="img/logo.webp" width="150" height="46">
+            <img src="img/logo.webp" alt="Пластиковые окна" srcset="img/logo.webp">
           </a>
-          <ul class="d-flex gap-3">
+          <ul class="d-flex gap-3 nav-list">
+            <div class="media-logo align-items-center justify-content-between mb-4">
+              <a class="logo" href="index.html">
+                <img src="img/logo.webp" alt="Пластиковые окна" srcset="img/logo.webp">
+              </a>
+              <button id="close-menu">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="javascript:void(0)">Окна ▾</a>
+              <a class="nav-link active" aria-current="page" href="javascript:void(0)">
+                <span>Окна</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)">Пластиковые окна</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Алюминиевые окна</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Двери ▾</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Балконы ▾</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Перегородки ▾</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Входные группы ▾</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">О компании ▾</a></li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <span>Двери</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)">Пластиковые окна</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Алюминиевые окна</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <span>Балконы</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)">Пластиковые окна</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Алюминиевые окна</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <span>Перегородки</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)">Пластиковые окна</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Алюминиевые окна</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <span>Входные группы</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)">Пластиковые окна</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Алюминиевые окна</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <span>О компании</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)">Пластиковые окна</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Алюминиевые окна</a>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <div class="d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-sm-3 gap-2">
             <a class="tg" href="#!" aria-label="Connect to tg">
               <i class="fa-brands fa-telegram"></i>
             </a>
@@ -84,6 +168,9 @@
               <a class="tel" href="tel:88002555238">8 (800) 255-52-38</a>
               <span class="work-time">Пн-Пт: 9:00 - 17:00</span>
             </div>
+            <button id="open-menu">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
           </div>
         </nav>
       </div>
@@ -113,6 +200,33 @@
       <!-- blog -->
       <search class="blog mt-5">
         <div class="main-container">
+          <div class="blog-categories d-lg-none d-flex">
+            <div class="categories-box d-block">
+              <h3 class="categories-box__title">
+                <div class="title-before"></div>
+                Категорие
+                <div class="title-after"></div>
+
+              </h3>
+              <ul class="categories-box__list d-flex flex-column gap-2 mt-3">
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+                <li>
+                  Lorem, ipsum dolor. <span>(6)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="swiper blog-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
