@@ -1,3 +1,17 @@
+const menu = document.querySelector(".header .nav-list");
+const closeMenuBtn = document.querySelector("#close-menu");
+const openMenuBtn = document.querySelector("#open-menu");
+const overlay = document.querySelector("#overlay");
+openMenuBtn.addEventListener('click', () => {
+  menu.classList.add("show");
+  overlay.classList.add("show");
+})
+closeMenuBtn.addEventListener('click', () => {
+  menu.classList.remove("show");
+  overlay.classList.remove("show");
+})
+
+
 const swiper = new Swiper(".constructions-swiper", {
   slidesPerView: 6,
   spaceBetween: 20,
@@ -25,6 +39,24 @@ const glazingStepsSwiper = new Swiper(".glazing-steps-swiper", {
     nextEl: ".glazing-steps-swiper .swiper-btn-next",
     prevEl: ".glazing-steps-swiper .swiper-btn-prev",
   },
+  breakpoints: {
+    1450: {
+      slidesPerView: 6,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+      0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  }
 });
 
 // blog-swiper
@@ -67,56 +99,58 @@ const colorsSwiper = new Swiper(".colors-swiper", {
   },
 });
 
-const ctx = document.getElementById('myChart').getContext('2d');
-if (ctx) {
-  const myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: [
-        'Размер и геометрическая форма',
-        'Количество сборок',
-        'Тип оглавления',
-        'Тип профиля',
-        'Вид строповка',
-        'Качество фурнитуры',
-        'Цвет профиля',
-        'Акссесуары, монтажные сетки НПД.'
-      ],
-      datasets: [{
-        data: [25, 15, 10, 20, 10, 5, 10, 5], // Approximate percentages based on visual estimation
-        backgroundColor: [
-          '#1E90FF',
-          '#FF4500',
-          '#D3D3D3',
-          '#1E90FF',
-          '#FF4500',
-          '#FFA500',
-          '#D3D3D3',
-          '#FF4500'
+try {
+  const ctx = document.getElementById('myChart').getContext('2d');
+  if (ctx) {
+    const myChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Размер и геометрическая форма',
+          'Количество сборок',
+          'Тип оглавления',
+          'Тип профиля',
+          'Вид строповка',
+          'Качество фурнитуры',
+          'Цвет профиля',
+          'Акссесуары, монтажные сетки НПД.'
         ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          display: false // Hide default legend
+        datasets: [{
+          data: [25, 15, 10, 20, 10, 5, 10, 5], // Approximate percentages based on visual estimation
+          backgroundColor: [
+            '#1E90FF',
+            '#FF4500',
+            '#D3D3D3',
+            '#1E90FF',
+            '#FF4500',
+            '#FFA500',
+            '#D3D3D3',
+            '#FF4500'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false // Hide default legend
+          }
         }
       }
-    }
-  });
+    });
 
-  // Generate dynamic legend
-  const legendContainer = document.getElementById('legendContainer');
-  const legendItems = myChart.data.labels.map((label, index) => {
-    const color = myChart.data.datasets[0].backgroundColor[index];
-    return `<div class="legend-item"><span class="legend-color" style="background-color: ${color};"></span>${label}</div>`;
-  });
-  legendContainer.innerHTML = legendItems.join('');
+    // Generate dynamic legend
+    const legendContainer = document.getElementById('legendContainer');
+    const legendItems = myChart.data.labels.map((label, index) => {
+      const color = myChart.data.datasets[0].backgroundColor[index];
+      return `<div class="legend-item"><span class="legend-color" style="background-color: ${color};"></span>${label}</div>`;
+    });
+    legendContainer.innerHTML = legendItems.join('');
+  }
+} catch (error) {
 }
-
 
 
 // try {

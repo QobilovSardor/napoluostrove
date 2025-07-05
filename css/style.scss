@@ -165,6 +165,20 @@ body {
 }
 // swiper
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
 .container {
   max-width: 1147px;
   margin: 0 auto;
@@ -298,6 +312,14 @@ body {
     max-width: 1570px;
     margin: 0 auto;
   }
+  .media-logo {
+    display: none;
+  }
+  #open-menu {
+    font-size: 35px;
+    color: #1c3f97;
+    display: none;
+  }
   .nav-link {
     webkit-transition: color 0.4s ease;
     -moz-transition: color 0.4s ease;
@@ -391,6 +413,9 @@ body {
   a {
     text-decoration: none;
     color: #62b6f3;
+    span {
+      color: #1c3f97;
+    }
   }
 }
 
@@ -1030,6 +1055,7 @@ body {
     align-items: start;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
   }
   &-title {
     padding: 0px 0px 0;
@@ -1069,7 +1095,7 @@ body {
     text-align: center;
     position: relative;
     text-align: left;
-    padding: 28px 0 24px;
+    padding: 28px 15px 24px 15px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.25);
     color: #fff;
@@ -1085,3 +1111,176 @@ body {
   }
 }
 // footer
+
+// media
+@media (max-width: 1600px) {
+  .header-container,
+  .container,
+  .main-container {
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .header {
+    .nav-list {
+      flex-direction: column;
+      zoom: 1;
+      filter: alpha(opacity=100);
+      -webkit-opacity: 1;
+      -moz-opacity: 1;
+      opacity: 1;
+      margin: 0px 0 0;
+      padding: 0px 0 0px 0 !important;
+      background-color: #1c3f97;
+      top: 0px;
+      bottom: 0px;
+      left: auto;
+      position: fixed;
+      z-index: 1000020;
+      height: 100%;
+      width: 100%;
+      max-height: 100% !important;
+      display: block;
+      overflow: scroll;
+      text-align: left;
+      min-width: 0;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      border-top: none;
+      max-width: 600px;
+      padding: 40px !important;
+      right: -100%;
+      &.show {
+        right: 0;
+      }
+      .media-logo {
+        display: flex;
+      }
+      #close-menu {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+    #open-menu {
+      display: block;
+    }
+    .nav-link {
+      color: #fff;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      i {
+        transform: rotate(-90deg);
+      }
+      &.active {
+        color: #fff;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .blog-banner {
+    height: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .header-container,
+  .container,
+  .main-container {
+    padding-inline: 15px;
+  }
+  .header {
+    .nav-list {
+      max-width: 100%;
+      padding: 25px !important;
+      .nav-link {
+        font-size: 18px;
+      }
+    }
+    .logo {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    .whatsapp,
+    .tg {
+      width: 25px;
+      height: 25px;
+      font-size: 15px;
+    }
+    #open-menu {
+      font-size: 20px;
+    }
+    .tel {
+      font-size: 18px;
+    }
+  }
+  .banner-title {
+    font-size: 40px;
+  }
+  .breadcrumb-box {
+    background-color: #fff;
+    padding: 20px 20px;
+    gap: 8px;
+    font-size: 12px;
+    margin: 25px 0;
+  }
+  .blog-banner {
+    height: 400px;
+  }
+  .glazing-steps-swiper {
+    padding: 0;
+    .glazing-steps__box {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .glazing-steps__box {
+    padding: 18px;
+  }
+  .swiper-btn-next,
+  .swiper-btn-prev {
+    i {
+      font-size: 50px;
+    }
+  }
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 490px) {
+  .banner-title {
+    font-size: 35px;
+  }
+  .banner-content {
+    margin: 20px 0;
+  }
+  .ltx-before::before,
+  .ltx-after::before,
+  .ltx-after::before,
+  .ltx-after::after {
+    height: 15px;
+  }
+  .ltx-after::before,
+  .ltx-after::after {
+    top: -24px;
+  }
+  .blog-banner {
+    height: 250px;
+  }
+  .blog-title {
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  .footer-title {
+    font-size: 25px;
+  }
+}
