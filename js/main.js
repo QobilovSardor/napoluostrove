@@ -45,6 +45,20 @@ const swiper = new Swiper(".constructions-swiper", {
     nextEl: ".swiper-btn-next",
     prevEl: ".swiper-btn-prev",
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 6,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+    550: {
+      slidesPerView: 4,
+    },
+    0: {
+      slidesPerView: 1,
+    }
+  }
 });
 
 // portfolio-swiper
@@ -55,6 +69,20 @@ const portfolioSwiper = new Swiper(".portfolio-swiper", {
     nextEl: ".portfolio-swiper .swiper-btn-next",
     prevEl: ".portfolio-swiper .swiper-btn-prev",
   },
+  breakpoints: {
+    1150: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1
+    },
+  }
 });
 
 // glazing-steps-swiper

@@ -702,6 +702,8 @@ body {
   }
   &-right {
     max-width: 300px;
+    position: relative;
+    z-index: 2;
     &__boxes {
       display: flex;
       flex-direction: column;
@@ -1138,6 +1140,8 @@ body {
   &__right {
     min-width: 300px;
     pointer-events: none;
+    position: relative;
+    z-index: 2;
     .swiper-btn-next,
     .swiper-btn-prev {
       display: none;
@@ -1466,6 +1470,9 @@ body {
       }
     }
   }
+  .intro-main {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .blog-banner {
@@ -1525,12 +1532,24 @@ body {
     max-width: 78px;
     height: 30px;
   }
+  .intro-left__boxes {
+    flex-wrap: wrap;
+  }
+  .portfolio-title {
+    max-width: 100%;
+  }
+  .portfolio-box {
+    height: 400px;
+  }
 }
 @media (max-width: 768px) {
   .chart {
     flex-direction: column;
     gap: 30px;
     margin-top: 20px;
+  }
+  .intro .main-container > .d-flex {
+    flex-direction: column;
   }
 }
 @media (max-width: 700px) {
@@ -1665,6 +1684,37 @@ body {
   }
   .chart .legend-item {
     white-space: break-spaces;
+  }
+  .intro-left__title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .intro-left__desc {
+    width: 100%;
+  }
+  .intro-left__boxes {
+    margin: 20px 0;
+  }
+  .portfolio-box {
+    padding: 20px;
+  }
+  .portfolio {
+    .swiper {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
+    .swiper-btn-next {
+      right: 15px;
+    }
+    .swiper-btn-prev {
+      left: 15px;
+    }
+  }
+  .portfolio-title {
+    margin-bottom: 30px;
+  }
+  .intro {
+    padding: 20px 0;
   }
 }
 
