@@ -182,6 +182,23 @@ const colorsSwiper = new Swiper(".colors-swiper", {
     nextEl: ".colors-swiper .swiper-btn-next",
     prevEl: ".colors-swiper .swiper-btn-prev",
   },
+  breakpoints: {
+    1350: {
+      slidesPerView: 9,
+    },
+    1024: {
+      slidesPerView: 6,
+    },
+    700: {
+      slidesPerView: 4,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 // intro-swiper
@@ -209,8 +226,33 @@ const introSwiper = new Swiper(".intro-swiper", {
 const partnersImages = new Swiper(".partners-images", {
   slidesPerView: 4,
   spaceBetween: 20,
+
   breakpoints: {
     1100: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }
+});
+
+// products-swiper
+const productsSwiper = new Swiper(".products-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".products-swiper .swiper-btn-next",
+    prevEl: ".products-swiper .swiper-btn-prev",
+  },
+  breakpoints: {
+    992: {
       slidesPerView: 4,
     },
     768: {
