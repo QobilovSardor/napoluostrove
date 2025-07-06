@@ -117,6 +117,23 @@ const accessoriesSwiper = new Swiper(".accessories-swiper", {
     nextEl: ".accessories .swiper-btn-next",
     prevEl: ".accessories .swiper-btn-prev",
   },
+  breakpoints: {
+    1150: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    550: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 // tab-swiper-1
@@ -137,6 +154,47 @@ const colorsSwiper = new Swiper(".colors-swiper", {
     nextEl: ".colors-swiper .swiper-btn-next",
     prevEl: ".colors-swiper .swiper-btn-prev",
   },
+});
+
+// intro-swiper
+const introSwiper = new Swiper(".intro-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".intro-swiper .swiper-btn-next",
+    prevEl: ".intro-swiper .swiper-btn-prev",
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }
+});
+
+// partners-images
+const partnersImages = new Swiper(".partners-images", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  breakpoints: {
+    1100: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    490: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 try {
