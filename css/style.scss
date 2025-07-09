@@ -353,7 +353,7 @@ body {
     margin-bottom: 0;
     font-weight: 600;
     i {
-      transform: translateY(5px);
+      transform: translateY(4px);
     }
   }
   &__desc {
@@ -1829,6 +1829,12 @@ body {
   .intro-left__title.sm {
     font-size: 30px;
   }
+  .intro-right__box {
+    justify-content: center;
+  }
+  .intro-right__boxes {
+    gap: 0;
+  }
 }
 
 @media (max-width: 490px) {
@@ -1900,4 +1906,22 @@ body {
       display: block;
     }
   }
+  .info-blockquote .blog-desc i {
+    transform: translateY(6px);
+  }
+}
+
+.info-blockquote .hide-deck {
+  display: none;
+  &.show {
+    display: inline;
+  }
+}
+.footer-list__item {
+  i {
+    transition: all 0.2s linear;
+  }
+}
+.rotate-180 {
+  transform: rotate(90deg);
 }

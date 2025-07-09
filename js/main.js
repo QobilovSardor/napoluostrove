@@ -209,6 +209,7 @@ const introSwiper = new Swiper(".intro-swiper", {
     nextEl: ".intro-swiper .swiper-btn-next",
     prevEl: ".intro-swiper .swiper-btn-prev",
   },
+  loop: true,
   breakpoints: {
     700: {
       slidesPerView: 1,
@@ -226,6 +227,12 @@ const introSwiper = new Swiper(".intro-swiper", {
 const partnersImages = new Swiper(".partners-images", {
   slidesPerView: 4,
   spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
 
   breakpoints: {
     1100: {
@@ -327,3 +334,40 @@ try {
 //     VK.Widgets.Comments('vk_comments', { width: 500, limit: 15 }, 321);
 //   });
 // } catch (error) { }
+
+const blockQuotes = document.querySelectorAll(".info-blockquote");
+
+if (blockQuotes.length) {
+  blockQuotes.forEach(item => {
+    const showMoreBtn = item.querySelector(".show-more");
+    const hiddenText = item.querySelector(".hide-deck");
+
+    showMoreBtn.addEventListener("click", () => {
+      hiddenText.classList.toggle("show");
+
+      // Tugma matnini almashtirish
+      if (hiddenText.classList.contains("show")) {
+        showMoreBtn.textContent = "Скрыть"; // yoki "Yopish"
+      } else {
+        showMoreBtn.textContent = "Подробнее..."; // yoki "Batafsil"
+      }
+    });
+  });
+}
+
+const footerList = document.querySelectorAll(".footer-list");
+footerList.forEach(list => {
+  const footerListItem = list.querySelectorAll(".footer-list__item");
+
+  footerListItem.forEach(item => {
+    const options = item.querySelector("ul");
+    const icon = item.querySelector('.fa-solid.fa-chevron-right');
+    options.classList.add('d-none')
+    item.addEventListener("click", () => {
+      options.classList.toggle('d-none');
+      icon.classList.toggle('rotate-180');
+
+    })
+  })
+
+})
