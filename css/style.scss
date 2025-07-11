@@ -1490,6 +1490,17 @@ blockquote {
 .glazing-steps-swiper {
   padding: 40px 20px !important;
 }
+
+.transparent-intro {
+  background: transparent !important;
+  .intro-right .icon-box {
+    border: 2px solid #c5c6c9;
+  }
+  .single {
+    max-width: 345px;
+    width: 100%;
+  }
+}
 // media
 @media (max-width: 1600px) {
   .header-container,
@@ -1756,6 +1767,15 @@ blockquote {
   }
   .intro .main-container > .d-flex {
     flex-direction: column;
+  }
+  .transparent-intro .single {
+    margin: 0 auto;
+  }
+  .transparent-intro {
+    background: #ebf2f5 !important;
+  }
+  .transparent-intro .intro-right .icon-box{
+    border: none;
   }
 }
 @media (max-width: 700px) {
@@ -2052,4 +2072,10 @@ header .nav-item {
 
 .header .nav-item.no-hover:hover::after {
   display: none;
+}
+
+@media (max-width: 405px) {
+  .intro-left__title {
+    font-size: 30px;
+  }
 }
