@@ -41,6 +41,7 @@ document.querySelectorAll('.nav-item').forEach(item => {
 const swiper = new Swiper(".constructions-swiper", {
   slidesPerView: 6,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".swiper-btn-next",
     prevEl: ".swiper-btn-prev",
@@ -65,6 +66,7 @@ const swiper = new Swiper(".constructions-swiper", {
 const portfolioSwiper = new Swiper(".portfolio-swiper", {
   slidesPerView: 4,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".portfolio-swiper .swiper-btn-next",
     prevEl: ".portfolio-swiper .swiper-btn-prev",
@@ -89,6 +91,7 @@ const portfolioSwiper = new Swiper(".portfolio-swiper", {
 const glazingStepsSwiper = new Swiper(".glazing-steps-swiper", {
   slidesPerView: 6,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".glazing-steps-swiper .swiper-btn-next",
     prevEl: ".glazing-steps-swiper .swiper-btn-prev",
@@ -116,6 +119,7 @@ const glazingStepsSwiper = new Swiper(".glazing-steps-swiper", {
 // blog-swiper
 const blogSwiper = new Swiper(".blog-swiper", {
   slidesPerView: 3,
+  loop: true,
   spaceBetween: 20,
   navigation: {
     nextEl: ".blog-swiper .swiper-btn-next",
@@ -141,6 +145,7 @@ const blogSwiper = new Swiper(".blog-swiper", {
 const accessoriesSwiper = new Swiper(".accessories-swiper", {
   slidesPerView: 5,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".accessories .swiper-btn-next",
     prevEl: ".accessories .swiper-btn-prev",
@@ -167,7 +172,7 @@ const accessoriesSwiper = new Swiper(".accessories-swiper", {
 // tab-swiper-1
 const tabSwiper1 = new Swiper(".tab-swiper-1", {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 20, loop: true,
   navigation: {
     nextEl: ".tab-swiper-1 .swiper-btn-next",
     prevEl: ".tab-swiper-1 .swiper-btn-prev",
@@ -177,7 +182,7 @@ const tabSwiper1 = new Swiper(".tab-swiper-1", {
 // colors-swiper
 const colorsSwiper = new Swiper(".colors-swiper", {
   slidesPerView: 9,
-  spaceBetween: 20,
+  spaceBetween: 20, loop: true,
   navigation: {
     nextEl: ".colors-swiper .swiper-btn-next",
     prevEl: ".colors-swiper .swiper-btn-prev",
@@ -204,7 +209,7 @@ const colorsSwiper = new Swiper(".colors-swiper", {
 // intro-swiper
 const introSwiper = new Swiper(".intro-swiper", {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 20, loop: true,
   navigation: {
     nextEl: ".intro-swiper .swiper-btn-next",
     prevEl: ".intro-swiper .swiper-btn-prev",
@@ -252,7 +257,7 @@ const partnersImages = new Swiper(".partners-images", {
 
 // products-swiper
 const productsSwiper = new Swiper(".products-swiper", {
-  slidesPerView: 4,
+  slidesPerView: 4, loop: true,
   spaceBetween: 20,
   navigation: {
     nextEl: ".products-swiper .swiper-btn-next",

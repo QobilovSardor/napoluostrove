@@ -1876,7 +1876,7 @@ blockquote {
   .header .nav-item:hover:hover .sub-menu {
     box-shadow: none;
   }
-  .header .nav-item .sub-menu a{
+  .header .nav-item .sub-menu a {
     margin: 0;
   }
   .header .nav-item .sub-menu a:before {
@@ -2111,8 +2111,39 @@ blockquote {
       margin-right: 3px;
     }
   }
+  .colors-swiper {
+    .swiper-btn-prev,
+    .swiper-btn-next {
+      top: 35%;
+    }
+  }
+  .footer {
+    .footer-list {
+      margin-left: 20px;
+      // margin-inline: auto;
+      // width: fit-content;
+    }
+  }
+  .footer .container,
+  .footer .main-container {
+    & > div {
+      width: 100%;
+    }
+  }
 }
-
+.intro-left__box {
+  position: relative;
+  width: 100%;
+  .intro-left__box-img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .intro-left__box-desc,
+  .intro-left__boxes .btn-main {
+    width: 195px;
+  }
+}
 .info-blockquote .hide-deck {
   display: none;
   &.show {
