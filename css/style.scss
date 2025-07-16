@@ -1392,11 +1392,9 @@ blockquote {
 }
 
 // plastic-windows__page
-.plastic-windows__page {
-  .intro {
-    background: url(../img/plastic-window-bg.jpg) #cdc7c1 no-repeat;
-    background-size: 77% 100%;
-  }
+.plastic-windows__page-bg {
+  background: url(../img/plastic-window-bg.jpg) #cdc7c1 no-repeat !important;
+  background-size: 77% 117% !important;
 }
 
 // select-color
@@ -1729,7 +1727,7 @@ blockquote {
     display: none;
   }
   .plastic-windows__page .intro {
-    background-size: cover;
+    background-size: cover !important;
   }
 }
 @media (max-width: 1024px) {
@@ -2031,6 +2029,9 @@ blockquote {
   }
   .intro-right__boxes {
     gap: 0;
+  }
+  .plastic-windows__page-bg {
+    background: #ecf2f4 !important;
   }
 }
 
