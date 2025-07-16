@@ -410,6 +410,9 @@ blockquote {
     i {
       transition: opacity 0.1s linear;
     }
+    &.active {
+      color: #2db1e6;
+    }
   }
   .nav-itemm {
     &:hover a {

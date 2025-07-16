@@ -13,14 +13,12 @@ closeMenuBtn.addEventListener('click', () => {
 
 document.querySelectorAll('.nav-item').forEach(item => {
   item.addEventListener('click', function (e) {
-    e.preventDefault(); // Havolani bosganda sahifa yangilanmasligi uchun
+    // e.preventDefault();
     const subMenu = this.querySelector('.sub-menu');
 
-    // Faqat bosilgan nav-itemning sub-menusini ochish/yopish
     if (subMenu) {
       const isActive = this.classList.contains('active');
 
-      // Barcha nav-item'larni yopish (faqat bitta ochiq bo'lishi uchun)
       document.querySelectorAll('.nav-item').forEach(nav => {
         nav.classList.remove('active');
         const otherSubMenu = nav.querySelector('.sub-menu');
@@ -29,7 +27,6 @@ document.querySelectorAll('.nav-item').forEach(item => {
         }
       });
 
-      // Agar sub-menu allaqachon ochiq bo'lsa, yopamiz, aks holda ochamiz
       if (!isActive) {
         this.classList.add('active');
         subMenu.classList.add('active');
@@ -333,13 +330,6 @@ try {
 }
 
 
-// try {
-//   window.addEventListener('DOMContentLoaded', function () {
-//     VK.init({ apiId: 111, onlyWidgets: true });
-//     VK.Widgets.Comments('vk_comments', { width: 500, limit: 15 }, 321);
-//   });
-// } catch (error) { }
-
 const blockQuotes = document.querySelectorAll(".info-blockquote");
 
 if (blockQuotes.length) {
@@ -371,8 +361,33 @@ footerList.forEach(list => {
     item.addEventListener("click", () => {
       options.classList.toggle('d-none');
       icon.classList.toggle('rotate-180');
-
     })
   })
-
 })
+
+// Get all sub-menu links
+const subMenuLinks = document.querySelectorAll('.sub-menu a');
+// Get current page URL
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+subMenuLinks.forEach(link => {
+  // Check if the link's href matches the current page
+  if (link.getAttribute('href') === currentPage) {
+    // Find the parent nav-link and add 'active' class
+    const parentNavLink = link.closest('.nav-item').querySelector('.nav-link');
+    if (parentNavLink) {
+      parentNavLink.classList.add('active');
+    }
+  }
+
+  // Add click event listener to each sub-menu link
+  link.addEventListener('click', function () {
+    // Remove active class from all nav-links
+    document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+    // Add active class to the parent nav-link
+    const parentNavLink = link.closest('.nav-item').querySelector('.nav-link');
+    if (parentNavLink) {
+      parentNavLink.classList.add('active');
+    }
+  });
+});
