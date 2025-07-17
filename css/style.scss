@@ -1580,8 +1580,20 @@ blockquote {
     }
   }
 }
-
+ .media-block-el {
+    display: none;
+  }
 @media (max-width: 1180px) {
+  .media-hide-el {
+    display: none;
+  }
+  .media-block-el {
+    display: block;
+  }
+  .header .nav-itemm:hover span::before,
+  .header .nav-itemm:hover span::after {
+    display: none;
+  }
   .header {
     .nav-list {
       flex-direction: column;
