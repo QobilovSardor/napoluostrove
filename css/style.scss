@@ -1541,7 +1541,11 @@ blockquote {
 .transparent-intro {
   background: transparent !important;
   .intro-right .icon-box {
-    border: 2px solid #c5c6c9;
+    // border: 2px solid #c5c6c9;
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
   }
   .single {
     max-width: 345px;
@@ -1580,9 +1584,9 @@ blockquote {
     }
   }
 }
- .media-block-el {
-    display: none;
-  }
+.media-block-el {
+  display: none;
+}
 @media (max-width: 1180px) {
   .media-hide-el {
     display: none;
