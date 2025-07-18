@@ -827,6 +827,10 @@ blockquote {
 .intro {
   background: #ebf2f5 !important;
   padding: 40px 0;
+  .container .d-flex,
+  .main-container .d-flex {
+    align-items: center;
+  }
   &-left {
     position: relative;
     z-index: 2;
