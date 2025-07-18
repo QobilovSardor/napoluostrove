@@ -882,6 +882,7 @@ blockquote {
     max-width: 300px;
     position: relative;
     z-index: 2;
+    overflow: visible;
     &__boxes {
       display: flex;
       flex-direction: column;
